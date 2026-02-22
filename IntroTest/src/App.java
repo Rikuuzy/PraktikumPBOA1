@@ -112,3 +112,4 @@ public class App {
                 + jumlahLulus + " dari " + nilaiUjian.length);
     }
 }
+// end
