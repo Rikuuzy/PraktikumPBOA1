@@ -1,3 +1,9 @@
+/* Nama File    : MTitik.java
+ * Deskripsi    : berisi Main Program Titik
+ * Pembuat      : Hadrian Shandhy Yudha
+ * Tanggal      : 22 Februari 2026
+ */
+
 public class MTitik {
 
     public static void main(String[] args) {
