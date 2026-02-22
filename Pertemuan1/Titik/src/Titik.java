@@ -49,3 +49,4 @@ public class Titik {
         System.out.println("Titik (" + absis + ", " + ordinat + ")");
     }
 }
+// end

@@ -14,3 +14,4 @@ public class MTitik {
         T1.printTitik();          // Menampilkan koordinat T1 setelah digeser
     }
 }
+// end
