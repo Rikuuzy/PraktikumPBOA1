@@ -30,9 +30,8 @@ public class MTitik {
         System.out.println();
 
         System.out.println("getRefleksi");
-        Titik T4 = T2.getRefleksiX();
-        Titik T5 = T2.getRefleksiY();
-        T2.printTitik();
+        T2.getRefleksiX();
+        T2.getRefleksiY();
         T2.printTitik();
         System.out.println();
 
