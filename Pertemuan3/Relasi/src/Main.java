@@ -1,0 +1,32 @@
+/* Nama File    : Main.java
+ * Deskripsi    : berisi Main Program dari 4 class Dosen, MataKuliah, Kendaraan, Mahasiswa
+ * Pembuat      : Hadrian Shandhy Yudha
+ * Tanggal      : 02 Maret 2026
+ */
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        MataKuliah PBO = new MataKuliah("PBO", "Pemrograman Berorientasi Objek", 3);
+        MataKuliah MBD = new MataKuliah("MBD", "Manajemen Basis Data", 3);
+
+        Mahasiswa M1 = new Mahasiswa("234", "Citra", "Informatika");
+
+        Dosen D1 = new Dosen("123", "Andi", "informatika");
+
+        Kendaraan K1 = new Kendaraan("H1234AB", "motor");
+
+        M1.setDosenWali(D1);
+        M1.setKendaraan(K1);
+
+        M1.addMataKuliah(PBO);
+        M1.addMataKuliah(MBD);
+
+        M1.printDetailMhs();
+
+        System.out.println("Jumlah Mata Kuliah = " + M1.getJumlahMataKuliah());
+        System.out.println("Jumlah SKS Mata Kuliah = " + M1.getJumlahSKS());
+    }
+
+}

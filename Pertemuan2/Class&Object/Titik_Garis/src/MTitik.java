@@ -33,6 +33,7 @@ public class MTitik {
         T2.getRefleksiX();
         T2.getRefleksiY();
         T2.printTitik();
+        T2.printTitik();
         System.out.println();
 
         System.out.println("Kuadran");
