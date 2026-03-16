@@ -1,3 +1,9 @@
+/* Nama File    : MGaris.java
+ * Deskripsi    : berisi Main Program Garis
+ * Pembuat      : Hadrian Shandhy Yudha
+ * Tanggal      : 23 Februari 2026
+ */
+
 public class MGaris {
     public static void main(String[] args) {
         System.out.println("=== TESTING CLASS GARIS ===\n");
