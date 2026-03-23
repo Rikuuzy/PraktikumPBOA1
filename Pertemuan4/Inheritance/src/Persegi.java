@@ -1,3 +1,9 @@
+/* Nama File    : Persegi.java
+ * Deskripsi    : berisi atribut dan method dalam class Persegi
+ * Pembuat      : Hadrian Shandhy Yudha
+ * Tanggal      : 09 Maret 2026
+ */
+
 public class Persegi extends BangunDatar{
     private double sisi;
 
@@ -37,6 +43,6 @@ public class Persegi extends BangunDatar{
         System.out.println("Jumlah Sisi : " + getJmlSisi());
         System.out.println("Warna : " + getWarna());
         System.out.println("Border : " + getBorder());
-        System.out.println("Sisi : " + sisi());
+        System.out.println("Sisi : " + getSisi());
     }
 }

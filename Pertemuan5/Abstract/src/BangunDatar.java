@@ -4,20 +4,29 @@
  * Tanggal      : 09 Maret 2026
  */
 
-public class BangunDatar {
+public abstract class BangunDatar {
+    // Atribut
     private int jmlSisi;
     private String warna;
     private String border;
 
+    // Method 
+    // Abstract
+    public abstract double getLuas();
+    public abstract double getKeliling();
+
+    // Konstruktor tanpa parameter
     public BangunDatar() {
 
     }
 
+    // Konstruktor dengan parameter
     public BangunDatar(String warna, String border) {
     this.warna = warna;
     this.border = border;
     }
 
+    // Get & Set
     public int getJmlSisi() {
         return jmlSisi;
     }
@@ -42,6 +51,15 @@ public class BangunDatar {
         this.border = border;
     }
 
+    public boolean isEqualLuas(BangunDatar x) {
+        return this.getLuas() == x.getLuas();
+    }
+
+    public boolean isEqualKeliling(BangunDatar x) {
+        return this.getKeliling() == getKeliling();
+    }
+
+    // PrintInfo
     public void printInfo() {
         System.out.println("Jumlah Sisi : " + jmlSisi);
         System.out.println("Warna : " + warna);

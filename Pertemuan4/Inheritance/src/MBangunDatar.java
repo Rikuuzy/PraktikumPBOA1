@@ -1,3 +1,9 @@
+/* Nama File    : MBangunDatar.java
+ * Deskripsi    : berisi Main Program Dari Bangung Datar
+ * Pembuat      : Hadrian Shandhy Yudha
+ * Tanggal      : 09 Maret 2026
+ */
+
 public class MBangunDatar {
     public static void main(String[] args) {
         Persegi Persegi1 = new Persegi(4, "biru", "hitam");

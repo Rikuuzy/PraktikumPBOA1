@@ -1,3 +1,8 @@
+/* Nama File    : BangunDatar.java
+ * Deskripsi    : berisi atribut dan method dalam class Lingkaran
+ * Pembuat      : Hadrian Shandhy Yudha
+ * Tanggal      : 09 Maret 2026
+ */
 public class Lingkaran extends BangunDatar{
     public double jari;
 
@@ -26,4 +31,13 @@ public class Lingkaran extends BangunDatar{
     public double getKeliling() {
         return 2 * Math.PI * jari;
     }
+
+    @Override
+    public void printInfo() {
+    System.out.println("Warna   : " + getWarna());
+    System.out.println("Border  : " + getBorder());
+    System.out.println("Jari-jari: " + jari);
+    System.out.println("Luas    : " + getLuas());
+    System.out.println("Keliling: " + getKeliling());
+}
 }
