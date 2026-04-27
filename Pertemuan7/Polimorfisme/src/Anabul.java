@@ -1,3 +1,8 @@
+/* Nama File    : Anabul.java
+ * Deskripsi    : berisi atribut dan method dalam class Anabul
+ * Pembuat      : Hadrian Shandhy Yudha
+ * Tanggal      : 26 April 2026
+ */
 public class Anabul {
     // Atribut
     private String nama;
