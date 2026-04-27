@@ -1,18 +1,29 @@
-## Getting Started
+## Lembar Laporan Praktikum
+Nama : Hadrian Shandhy Yudha
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+NIM : 24060124140207
 
-## Folder Structure
+Lab : PBO-A1
 
-The workspace contains two folders by default, where:
+## Pertanyaan Asersi2.java
+- PETANYAAN : secara konsep, ada yang kurang tepat pada program Asersi2 di atas.
+- JAWABAN : Kesalahan dimana asersi dirancang untuk verifikasi kondisi yang secara logika pasti benar jika kode ditulis benar, Bukan sebagai mekanisme input.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+  Asersi secara default mati, jadi saat program `Asersi2.java` tanpa `-enableassertions` baris `assert` dilewati/skip, alhasil program tetap berjalan tanpa peringatan apapun. Kemudian validasi input seharusnya menggunakan eksepsi.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+  Asersi digunakan untuk kondisi mustahil salah jika logika benar, dan gunakan eksepsi sebagai kondisi yang mungkin terjadi di luar kendali.
+  
+## Pertanyaan AngkaSial.java
+- PERTANYAAN : Ketika eksepsi terjadi, apakah baris 12 pada AngkaSial.java di atas dieksekusi?
+- JAWABAN :  Tidak akan dieksekusi jika eksepsi terjadi.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+> Baris 12 System.out.println(angka + " bukan angka sial");
 
-## Dependency Management
+Baris 12 di dalam method cobaAngka, ketika method dipannggil kemudian kondisi if bernilai true. Throw new AngkaSialException() di baris 10 langsung dieksekusi, baris 12 dilewati dan tidak pernah dieksekusi
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- PERTANYAAN : Apakah baris 21 pada AngkaSial.java di atas dieksekusi?
+- JAWABAN : Ya dieksekusi.
+
+> Baris 21 } catch (AngkaSialException ase) {
+
+Baris 21 adalah deklarasi blok catch (menangkap) tipe AngkaSialException, karena sesuai dengan eksepsi yang dilempar. Oleh karena itu, blok catch dimasuki dan isi baris 23 dan 24 dieksekusi, mencetak pesan error.
