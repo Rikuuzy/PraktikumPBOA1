@@ -1,0 +1,1 @@
+Cara kerja konsep Generik : Sebuah wadah serbaguna yang bisa untuk menampung dan memproses berbagai macam jenis seperti data object Kucing dll, isi tanpa harus membuat wadah baru lagi.
